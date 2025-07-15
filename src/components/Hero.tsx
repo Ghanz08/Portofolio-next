@@ -3,14 +3,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "data-aos": any;
-    }
-  }
-}
-
 export default function Hero() {
   useEffect(() => {
     // Initialize AOS
@@ -37,7 +29,7 @@ export default function Hero() {
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          <p className="text-white text-base font-light">Hello i'm a</p>
+          <p className="text-white text-base font-light">Hello i&apos;m a</p>
           <h1 className="text-white text-4xl lg:text-6xl font-bold mt-3">
             Fullstack Developer
           </h1>

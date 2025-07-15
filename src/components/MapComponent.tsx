@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import L from "leaflet";
 
 // Fix for default markers in react-leaflet
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:

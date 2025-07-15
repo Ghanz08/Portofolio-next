@@ -112,10 +112,10 @@ export default function About() {
             Software Engineering Student
           </h2>
           <p className="leading-relaxed">
-            Hello, I'm a software engineering student at Universitas Gadjah
-            Mada. My major is Software Engineering Technology, and I've been
-            pursuing this field since vocational high school. So yes, you could
-            say that I have been involved a lot in the world of IT
+            Hello, I&apos;m a software engineering student at Universitas Gadjah
+            Mada. My major is Software Engineering Technology, and I&apos;ve
+            been pursuing this field since vocational high school. So yes, you
+            could say that I have been involved a lot in the world of IT
           </p>
 
           <div className="mt-5 w-full flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">

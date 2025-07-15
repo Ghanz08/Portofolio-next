@@ -26,6 +26,7 @@ export default function Contact() {
       const L = await import("leaflet");
 
       // Fix for default markers
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       delete (L.Icon.Default.prototype as any)._getIconUrl;
       L.Icon.Default.mergeOptions({
         iconRetinaUrl:
@@ -133,11 +134,6 @@ export default function Contact() {
     setTimeout(() => {
       setSubmitStatus("idle");
     }, 300);
-  };
-
-  const testErrorToast = () => {
-    setSubmitStatus("error");
-    setShowToast(true);
   };
 
   return (

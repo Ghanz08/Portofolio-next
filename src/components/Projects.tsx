@@ -3,7 +3,13 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, Mousewheel, FreeMode } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  Mousewheel,
+  FreeMode,
+} from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -11,6 +17,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function Projects() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const swiperRef = useRef<any>(null);
 
   useEffect(() => {
@@ -43,74 +50,74 @@ export default function Projects() {
       }
     };
 
-    const swiperElement = document.querySelector('.project-swiper');
+    const swiperElement = document.querySelector(".project-swiper");
     if (swiperElement) {
-      swiperElement.addEventListener('wheel', handleWheel, { passive: false });
+      swiperElement.addEventListener("wheel", handleWheel, { passive: false });
     }
 
     return () => {
       if (swiperElement) {
-        swiperElement.removeEventListener('wheel', handleWheel);
+        swiperElement.removeEventListener("wheel", handleWheel);
       }
     };
   }, []);
 
-const projects = [
+  const projects = [
     {
-        id: 1,
-        title: "PicEase",
-        description:
-            "PicEase adalah aplikasi galeri berbasis web yang dirancang untuk memudahkan pengguna dalam menyimpan, mengatur, dan menampilkan koleksi gambar mereka. Aplikasi ini menawarkan antarmuka yang intuitif dan responsif, memungkinkan pengguna untuk mengunggah, mengelompokkan, serta mencari gambar dengan cepat.",
-        image: "/assets/PicEase.png",
-        github: "https://github.com/Ghanz08/PicEase",
-        delay: 0,
+      id: 1,
+      title: "PicEase",
+      description:
+        "PicEase adalah aplikasi galeri berbasis web yang dirancang untuk memudahkan pengguna dalam menyimpan, mengatur, dan menampilkan koleksi gambar mereka. Aplikasi ini menawarkan antarmuka yang intuitif dan responsif, memungkinkan pengguna untuk mengunggah, mengelompokkan, serta mencari gambar dengan cepat.",
+      image: "/assets/PicEase.png",
+      github: "https://github.com/Ghanz08/PicEase",
+      delay: 0,
     },
     {
-        id: 2,
-        title: "Lapor Saja!",
-        description:
-            "Lapor Saja! adalah website pengaduan masyarakat yang memudahkan pengguna untuk melaporkan masalah publik secara online, melacak status laporan, dan berinteraksi dengan pihak terkait untuk penanganan yang efektif.",
-        image: "/assets/Pengaduan Masyarakat.png",
-        github: "https://github.com/Ghanz08/pengaduan_masyarakat",
-        delay: 200,
+      id: 2,
+      title: "Lapor Saja!",
+      description:
+        "Lapor Saja! adalah website pengaduan masyarakat yang memudahkan pengguna untuk melaporkan masalah publik secara online, melacak status laporan, dan berinteraksi dengan pihak terkait untuk penanganan yang efektif.",
+      image: "/assets/Pengaduan Masyarakat.png",
+      github: "https://github.com/Ghanz08/pengaduan_masyarakat",
+      delay: 200,
     },
     {
-        id: 3,
-        title: "Plant Shop",
-        description:
-            "Plant Shop adalah proyek website e-commerce berbasis pengguna dan admin yang menjual berbagai tanaman. Platform ini memungkinkan transaksi online menggunakan integrasi Midtrans (dummy) untuk pembayaran, serta menyediakan fitur manajemen produk dan pesanan untuk admin.",
-        image: "/assets/Plant-shop.png",
-        github: "https://github.com/Ghanz08/Plant-Shop",
-        delay: 0,
+      id: 3,
+      title: "Plant Shop",
+      description:
+        "Plant Shop adalah proyek website e-commerce berbasis pengguna dan admin yang menjual berbagai tanaman. Platform ini memungkinkan transaksi online menggunakan integrasi Midtrans (dummy) untuk pembayaran, serta menyediakan fitur manajemen produk dan pesanan untuk admin.",
+      image: "/assets/Plant-shop.png",
+      github: "https://github.com/Ghanz08/Plant-Shop",
+      delay: 0,
     },
     {
-        id: 4,
-        title: "CuanTrack",
-        description:
-            "CuanTrack adalah aplikasi pencatat keuangan yang dibuat menggunakan PHP Native dan Bootstrap. Aplikasi ini membantu pengguna dalam mencatat pemasukan dan pengeluaran secara sederhana dan efisien.",
-        image: "/assets/CuanTrack.png",
-        github: "https://github.com/Ghanz08/CuanTrack",
-        delay: 0,
+      id: 4,
+      title: "CuanTrack",
+      description:
+        "CuanTrack adalah aplikasi pencatat keuangan yang dibuat menggunakan PHP Native dan Bootstrap. Aplikasi ini membantu pengguna dalam mencatat pemasukan dan pengeluaran secara sederhana dan efisien.",
+      image: "/assets/CuanTrack.png",
+      github: "https://github.com/Ghanz08/CuanTrack",
+      delay: 0,
     },
     {
-        id: 5,
-        title: "NetrAI",
-        description:
-            "NetrAI adalah aplikasi mobile berbasis Flutter yang membantu tunanetra menjalani aktivitas sehari-hari dengan dukungan Gemini API, Firebase, dan Google Cloud API.",
-        image: "/assets/NetrAI.png",
-        github: "Forbidden",
-        delay: 0,
+      id: 5,
+      title: "NetrAI",
+      description:
+        "NetrAI adalah aplikasi mobile berbasis Flutter yang membantu tunanetra menjalani aktivitas sehari-hari dengan dukungan Gemini API, Firebase, dan Google Cloud API.",
+      image: "/assets/NetrAI.png",
+      github: "Forbidden",
+      delay: 0,
     },
     {
-        id: 6,
-        title: "Portofolio Next.js",
-        description:
-            "Portofolio Next.js adalah proyek website portofolio yang dibangun menggunakan Next.js. Website ini menampilkan berbagai proyek dan pengalaman saya sebagai pengembang, serta dilengkapi dengan fitur responsif dan performa yang optimal.",
-        image: "/assets/Portofolio.png",
-        github: "https://github.com/Ghanz08/NetrAI",
-        delay: 0,
+      id: 6,
+      title: "Portofolio Next.js",
+      description:
+        "Portofolio Next.js adalah proyek website portofolio yang dibangun menggunakan Next.js. Website ini menampilkan berbagai proyek dan pengalaman saya sebagai pengembang, serta dilengkapi dengan fitur responsif dan performa yang optimal.",
+      image: "/assets/Portofolio.png",
+      github: "https://github.com/Ghanz08/NetrAI",
+      delay: 0,
     },
-];
+  ];
 
   return (
     <div id="project" className="py-24 overflow-visible">
@@ -132,7 +139,7 @@ const projects = [
               invert: false,
               sensitivity: 1,
               releaseOnEdges: true,
-              eventsTarget: 'container',
+              eventsTarget: "container",
               thresholdDelta: 20,
               thresholdTime: 300,
             }}
@@ -247,19 +254,19 @@ const projects = [
             overflow: visible !important;
             padding: 20px 20px 50px 20px;
           }
-          
+
           @media (min-width: 640px) {
             .project-swiper {
               padding: 20px 30px 50px 30px;
             }
           }
-          
+
           @media (min-width: 1024px) {
             .project-swiper {
               padding: 20px 50px 50px 50px;
             }
           }
-          
+
           .project-swiper .swiper-wrapper {
             overflow: visible !important;
           }
@@ -268,11 +275,11 @@ const projects = [
             transition: all 0.3s ease-in-out;
             cursor: grab;
           }
-          
+
           .project-swiper .swiper-slide:active {
             cursor: grabbing;
           }
-          
+
           /* Desktop styles (3 cards) */
           @media (min-width: 1024px) {
             .project-swiper .swiper-slide {
@@ -290,7 +297,7 @@ const projects = [
               transform: scale(0.92);
             }
           }
-          
+
           /* Mobile and tablet styles (1 card) */
           @media (max-width: 1023px) {
             .project-swiper .swiper-slide {
@@ -303,7 +310,7 @@ const projects = [
               z-index: 1;
             }
           }
-          
+
           .project-swiper .swiper-pagination-bullet {
             background: #b69b43;
             opacity: 0.5;
@@ -317,7 +324,7 @@ const projects = [
           .project-swiper .swiper-pagination {
             bottom: 0 !important;
           }
-          
+
           /* Hide scrollbars but keep functionality */
           .project-swiper {
             scrollbar-width: none;
