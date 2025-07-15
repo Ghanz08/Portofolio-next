@@ -114,7 +114,7 @@ export default function Projects() {
       description:
         "Portofolio Next.js adalah proyek website portofolio yang dibangun menggunakan Next.js. Website ini menampilkan berbagai proyek dan pengalaman saya sebagai pengembang, serta dilengkapi dengan fitur responsif dan performa yang optimal.",
       image: "/assets/Portofolio.png",
-      github: "https://github.com/Ghanz08/NetrAI",
+      github: "https://github.com/Ghanz08/Portofolio-next",
       delay: 0,
     },
   ];
