@@ -16,11 +16,11 @@ export default function Hero() {
       <div className="w-full flex flex-col lg:flex-row flex-wrap justify-center items-center gap-6 lg:gap-24 mt-12 md:mt-36 mobile-safe-margin hero-mobile-compact">
         <div className="bg-[#b69b43] w-80 h-80 lg:w-96 lg:h-96 rounded-full border-4 border-[#b69b43] shadow-[0px_0px_133px_20px_rgba(182,155,67,0.8)] overflow-hidden">
           <Image
-            src="/assets/ghani1.jpg"
+            src="/assets/Ghani4.jpg"
             alt="Ghani Profile Picture"
             width={400}
             height={400}
-            className="w-full h-full object-cover object-[0px_-40px]"
+            className="w-full h-full object-cover object-[-10px_-70px] scale-110"
           />
         </div>
 
